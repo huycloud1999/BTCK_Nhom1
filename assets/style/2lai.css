@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+  
+}
+a{
+  text-decoration: none;
+}
+.container{
+    max-width: 1155px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* CSS cho logo */
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+  }
+.logo img {
+    max-width: 100%;
+    max-height: 100px;
+   
+  }
+  
+  /* CSS cho menu */
+
+  
+  .menu {
+    background-color: #efefef;
+  }
+  
+  .d-flex {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .d-flex * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .d-flex li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1.5em;
+    padding: 0;
+  }
+  .d-flex a {
+    padding: 0.3em 0;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .d-flex a:before,
+  .d-flex a:after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #b805ff;
+    width: 0;
+  }
+
+  .d-flex a:before {
+    top: 0;
+    left: 0;
+  }
+  .d-flex a:after {
+    bottom: 0;
+    right: 0;
+  }
+  .d-flex a:hover,
+  .d-flex .current a {
+    color: #fa0909;
+  }
+  .d-flex a:hover:before,
+  .d-flex .current a:before,
+  .d-flex a:hover:after,
+  .d-flex .current a:after {
+    width: 100%;
+  }
+  .menu {
+    background-color: #efefef;
+
+
+  }
+.banner img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.btn_filter{
+
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+}
+.btn_filter img{
+    background-color: #211d41;
+    max-width: 100%;
+    width: 100%; 
+    padding: 5px; 
+    max-height: 30px;
+    max-width: 30px;
+    margin:0 auto;
+}
+
+
+.filter {
+    display: flex;
+    align-items: center;
+    max-height:  30px;
+    max-width: 100% ;
+}
+.heart {
+display: flex;
+  animation: heartbeat 1s ease-in-out infinite;
+}
+
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+  .video_item {
+    margin: 20px 0;
+}
+
+.topic1 {
+    margin-bottom: 10px;
+}
+
+.video1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.video1 video {
+    width: 100%;
+    height: auto;
+
+  }
+  
+
+
+  .video1 .title {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  /* Định dạng tiêu đề cho video highlight */
+  .topic1 .title {
+    color: black;
+    background-color: #ccc;
+    padding: 5px;
+  }
+  
+  /* Định dạng tiêu đề cho video funny moments */
+  .topic2 .title {
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 5px;
+  }
+
+  /* Định dạng khi hover vào tiêu đề */
+.video1:hover .title {
+  background-color: #333;
+}
+.filter img.active {
+  opacity: 1;
+  transform: scale(1.1) rotate(3deg);
+  border: 2px solid yellow;
+  box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5);
+}
+
+
+/* Định dạng khi hover vào tiêu đề video highlight */
+.topic1 .video1:hover .title {
+  color: #ff0;
+}
+
+/* Định dạng khi hover vào tiêu đề video funny moments */
+.topic2 .video1:hover .title {
+  color: #f90;
+}
+
+.video1:hover video {
+  transform: scale(1.05);
+  border: 2px solid #ff0;
+}
+
+/* Định dạng video highlight khi hover vào */
+.topic1 .video1:hover video {
+  border-color: #fff;
+}
+
+/* Định dạng video funny moments khi hover vào */
+.topic2 .video1:hover video {
+  border-color: #f90;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #efefef;
+    text-align: center;
+    height: 100%;
+  }
+
+.formsend{
+  background-image: url("../img/backgroudhiih.jpg");  
+  background-size: cover;
+}
+form{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+  .formDG {
+    font-size: 24px;
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f0f0f0;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  
+#submit.send {
+  max-width: max-content;
+  align-self: center;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+#submit.send:hover {
+  background-color: #3e8e41;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu ul {
+    flex-direction: column; /* Chuyển menu thành dạng dọc */
+    padding: 0; /* Loại bỏ padding mặc định của danh sách */
+  }
+
+  .menu ul li {
+    width: 100%; /* Đặt chiều rộng của tất cả các tiêu đề trong menu là 100% */
+    text-align: center; /* Căn giữa nôi dung của các tiêu đề trong menu */
+     /* Tạo khoảng cách giữa các tiêu đề trong menu */
+  }
+
+  .menu ul li a {
+    padding: 10px; /* Đặt padding của các liên kết trong menu */
+  }
+    .col-8{
+        max-width: 100%;
+    }
+    .col-xl-4{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px){
+.mostview_item img{
+  display: none;
+}
+
+}
