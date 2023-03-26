@@ -153,7 +153,7 @@ a{
   border-radius: 12px 12px 12px 12px;
   text-align: center;
   padding: 2px;
-
+z-index: 998;
 }
 .main_item1 h2 {
   font-family: 'Noticia Text', serif;
@@ -170,12 +170,15 @@ a{
 .main_item21 img{
   max-width: 100%;
   width: 100%;
+  filter: brightness(75%);
 }
 
 .main_item22 img{
   max-width: 100%;
   width: 100%;
   height: auto;
+  filter: brightness(75%);
+  
 }
 
 .main_item21 {
@@ -219,6 +222,9 @@ flex-direction: column;
 justify-content: space-between;
 }
 /* ------------------------------------ */
+.mostpopular{
+  margin-bottom: 30px;
+}
 .mostpopular_item1 img{
   max-width: 100%;
   width: 100%;
@@ -229,8 +235,279 @@ h2{
   text-align: center;
   font-size: 16px;
 }
-/* ------------- */
+.mostpopular_item1 h5{
+  font-family: 'Noticia Text', serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
 
+}
+/* ------------- */
+  
+.left_item1 img{
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  height: 100%;
+  filter: brightness(75%);
+}
+
+.left_item1{
+  position: relative;
+  max-height: 300px;
+}
+.left_item1 {
+  margin-bottom: 20px;
+}
+.tag_left_item1 {
+  position: absolute; 
+  display: flex;
+  gap:10px;
+  top: 0; 
+  left: 40; 
+  margin-left: 20px;
+  margin-top: 10px;
+  max-width: 100%;
+
+}
+.tag_left_item1 p{
+  color: #efefef;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 12px 12px 12px 12px;
+  text-align: center;
+  padding: 2px;
+  text-transform: uppercase;
+  z-index: 999;
+}
+.tilte_left_item1{
+  position: absolute;
+
+  bottom: 0; 
+  left: 40;
+  margin-left: 20px;
+  width:100%;
+}
+.read {
+  color:white;
+  position: absolute;
+  bottom: 10px; 
+  right: 30px;
+  margin-left: 20px;
+  font-family: 'Noticia Text', serif;
+  text-decoration: none;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.read:hover{
+  background: linear-gradient(to right, purple,red);
+  transition: ease-in-out 1s;
+  border: 1px solid white;
+}
+.time_tacgia{
+  display: flex;
+  font-family: 'Noticia Text', serif;
+  justify-self: start;
+  color: white;
+  gap: 40px;
+}
+.tilte_left_item1 a{
+  text-decoration: none;
+  max-width: 100%;
+  width: 70%;
+}
+.tilte_left_item1 h2{
+  font-size: 23px;
+  color: #efefef;
+  font-weight: 900;
+  max-width: 100%;
+  width: 80%;
+}
+
+.right_item1 {
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.right_item1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(75%);
+  background-image: url("../img/bgleft.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+.right_item1 .right_tag p{
+  color: white;
+  text-align: center;
+  bottom: 0;
+}
+.right_item1 a{
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+}
+.right_item1 h2{
+  font-family: 'Noticia Text', serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+.right_tag p{
+  color: #efefef;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 12px 12px 12px 12px;
+  text-align: center;
+  padding: 2px;
+  max-width: max-content  ;
+}
+.right_tag {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+/* ========= */
+.right_item12 {
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.right_item12::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(75%);
+  background-image: url("../img/5a7e0690-space-groove-taric-splash-crop-1.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+.right_item12 .right_tag p{
+  color: white;
+  text-align: center;
+  bottom: 0;
+}
+.right_item12 a{
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+}
+.right_item12 h2{
+  font-family: 'Noticia Text', serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+.right_tag p{
+  color: #efefef;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 12px 12px 12px 12px;
+  text-align: center;
+  padding: 2px;
+  max-width: max-content  ;
+}
+/* ------------ */
+.poulular_post h5{
+  font-family: 'Noticia Text', serif;
+  font-size: 14px;
+}
+.title_hr_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_ppp {
+  margin-right:5px; /* cách khoảng cách giữa title và horizontal rule */
+  font-size: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.custom_hr {
+  width: 70%;
+  height: 1px;
+  border: none;
+  background-color: #333; /* màu của horizontal rule */
+}
+.popular_item1{
+  margin-bottom: 10px;
+}
+.popular_item1 h5:hover{
+  color: #fa0909;
+  
+}
+.sub {
+  background-image: url('https://cdnportal.mobalytics.gg/production/2020/11/32b954ec-subscr-banner.png');
+  background-repeat:repeat;
+  background-size:cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  
+}
+.sub h2{
+  color: white;
+  font-size: 20px;
+  display: flex;
+}
+.sub form {
+  display: flex;
+  max-width: 405px;
+    width: 100%;
+}
+
+.sub input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: calc(100% - 90px);
+  outline: none;
+
+}
+
+.sub button {
+  background-color: #f77145;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 
 
@@ -279,6 +556,19 @@ h2{
 
 
   @media only screen and (max-width: 768px) {
+    .tilte_left_item1{
+      top:40%;
+    }
+    .left_item1 img{
+     height: auto;
+    }
+    .tag_left_item1{
+      display: none;
+    }
+    .time_tacgia{
+      display: none;
+    }
+
     .menu ul {
       flex-direction: column; /* Chuyển menu thành dạng dọc */
       padding: 0; /* Loại bỏ padding mặc định của danh sách */
@@ -306,4 +596,17 @@ h2{
   .main_item21{
     margin-bottom: 5px;
   }
+  .main_item1 img{
+
+    height: 100%;
+
+  }
+  .main_item1 h2{
+    font-size: 25px;
+    text-align: center;
+  }
+
+.right{
+  display: none;
+}
 }

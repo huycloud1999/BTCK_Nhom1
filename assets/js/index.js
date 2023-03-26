@@ -1,40 +1,16 @@
-const carousel = document.querySelector('.carousel');
+const form = document.querySelector('form');
+const input = document.querySelector('input[type=email]');
+const button = document.querySelector('button');
 
-let isDown = false;
-let startX;
-let scrollLeft;
+button.addEventListener('click', function(event) {
+  event.preventDefault();
 
-carousel.addEventListener('mousedown', e => {
-  isDown = true;
-  startX = e.pageX - carousel.offsetLeft;
-  scrollLeft = carousel.scrollLeft;
-  clearInterval(intervalId);
+  const email = input.value;
+
+  if (localStorage.getItem('email') === email) {
+    alert('This email is already subscribed. Please enter a different email.');
+  } else {
+    localStorage.setItem('email', email);
+    alert('Thank you for subscribing!');
+  }
 });
-
-carousel.addEventListener('mouseleave', () => {
-  isDown = false;
-  setCarouselInterval();
-});
-
-carousel.addEventListener('mouseup', () => {
-  isDown = false;
-  setCarouselInterval();
-});
-
-carousel.addEventListener('mousemove', e => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - carousel.offsetLeft;
-  const walk = x - startX;
-  carousel.scrollLeft = scrollLeft - walk;
-});
-
-let intervalId;
-
-function setCarouselInterval() {
-  intervalId = setInterval(() => {
-    carousel.scrollLeft += carousel.offsetWidth;
-  }, 5000);
-}
-
-setCarouselInterval();
