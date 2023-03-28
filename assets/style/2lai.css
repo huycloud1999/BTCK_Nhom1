@@ -36,7 +36,7 @@ a{
 
   
   .menu {
-    background-color: #efefef;
+    background-color: black;
   }
   
   .d-flex {
@@ -60,7 +60,7 @@ a{
   }
   .d-flex a {
     padding: 0.3em 0;
-    color: black;
+    color: white;
     position: relative;
     text-decoration: none;
     display: inline-block;
@@ -95,8 +95,7 @@ a{
     width: 100%;
   }
   .menu {
-    background-color: #efefef;
-
+    background-color:black;
 
   }
 .banner img{
@@ -244,6 +243,7 @@ footer{
 .formsend{
   background-image: url("../img/backgroudhiih.jpg");  
   background-size: cover;
+padding-top: 10px;
 }
 form{
   margin: 20px;
@@ -251,13 +251,14 @@ form{
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+
 }
   .formDG {
     font-size: 24px;
     color:white;
     text-align: center;
     margin-bottom: 20px;
-    
+  z-index: 999;
 
   }
   

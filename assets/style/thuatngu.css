@@ -37,7 +37,7 @@ a{
 
   
   .menu {
-    background-color: #efefef;
+    background-color:black;
 
 
   }
@@ -96,7 +96,7 @@ a{
   }
   .d-flex a {
     padding: 0.3em 0;
-    color: black;
+    color: white;
     position: relative;
     text-decoration: none;
     display: inline-block;
